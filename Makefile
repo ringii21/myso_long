@@ -6,7 +6,7 @@
 #    By: abonard <abonard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/01 17:19:39 by abonard           #+#    #+#              #
-#    Updated: 2022/05/24 19:53:01 by abonard          ###   ########.fr        #
+#    Updated: 2022/05/25 15:52:46 by abonard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,13 @@ BOLD = \033[1m
 SRCS		=	./srcs/ft_parcing.c \
 				./srcs/so_long.c \
 				./srcs/ft_solong_utils.c\
+				./srcs/ft_solong_utils2.c\
 				./srcs/ft_moves.c
 
 SRCS_BONUS	= 	./bonus/srcs/ft_parcing.c \
 				./bonus/srcs/so_long.c \
 				./bonus/srcs/ft_solong_utils.c\
+				./bonus/srcs/so_longutils2.c\
 				./bonus/srcs/digit.c\
 				./bonus/srcs/ft_moves.c
 				
@@ -81,15 +83,13 @@ bonus:		${OBJS_B}
 clean:
 			@make -C $(LIB_DIR) clean
 			@${RM} ${OBJS}
-			@${RM} ${OBJS2}
-			@${RM} ${OBJS3}
-			@${RM} ${OBJS4}
+			@${RM} ${OBJS_B}
 			@echo "${GREEN}[ OK ]${RED}	*.o files	deleted${NC}"
 
 fclean:		clean
 			@make -C $(LIB_DIR) fclean
 			@echo "${GREEN}[ OK ]${RED}	libft.a		deleted${NC}"
-			@${RM} ${NAME} ${NAME2} ${NAME3} ${NAME4}
+			@${RM} ${NAME} 
 			@echo "${GREEN}[ OK ]${RED}everything	deleted${NC}"
 
 re :		fclean all
