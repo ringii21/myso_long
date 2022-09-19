@@ -6,7 +6,7 @@
 #    By: abonard <abonard@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/01 17:19:39 by abonard           #+#    #+#              #
-#    Updated: 2022/05/25 15:52:46 by abonard          ###   ########.fr        #
+#    Updated: 2022/05/26 15:28:46 by abonard          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRCS_BONUS	= 	./bonus/srcs/ft_parcing.c \
 				
 INCLUDES	=	./includes/libft.h \
 				./includes/ft_printf.h \
+				./includes/so_long.h \
 
 INCLUDES_BONUS	=	./bonus/includes/libft/libft.h \
 					./bonus/includes/so_long.h\
